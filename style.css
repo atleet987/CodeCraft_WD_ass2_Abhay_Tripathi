@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* border: 20px solid black; */
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #08001f, #30197d);
+    color: white;
+    position: relative;
+    z-index: -2;
+}
+
+.container::before{
+    content: "";
+    height: 180px;
+    width: 180px;
+    background: #f41b75;
+    border-radius: 5px;
+    position: absolute;
+    top: 170px;
+    left: 330px;
+    z-index: -1;
+}
+
+.container::after{
+    content: "";
+    height: 180px;
+    width: 180px;
+    background: #419fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 340px;
+    right: 340px;
+    z-index: -1;
+}
+
+.clock{
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    height: 25vh;
+    width: 45vw;
+    background-color: rgba(235, 0, 255, 0.11);
+    backdrop-filter: blur(40px);
+}
+
+.clock span{
+    font-size: 72px;
+    font-family: "Poppins", sans-serif;
+}
